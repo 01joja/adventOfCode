@@ -1,0 +1,24 @@
+[package]
+name = "y2025"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+
+
+
+[[bin]]
+name = "day_1"
+path = "src/day_1/bin/main.rs"
+
+[[bin]]
+name = "day_2"
+path = "src/day_2/bin/main.rs"
+
+
+
+
+
+
+
