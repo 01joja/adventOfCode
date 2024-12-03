@@ -12,7 +12,7 @@ fn main(){
 
     let mut l = vec![];
     let mut r = vec![];
-    if let Ok(lines) = read_lines("src/day_1/data/data1") {
+    if let Ok(lines) = read_lines("src/bin/day1.data") {
         // Consumes the iterator, returns an (Optional) String
         for line in lines.flatten() {
             if let Some((left,right)) = line.split_once("   "){
