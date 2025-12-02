@@ -53,5 +53,6 @@ for y in years:
             open(dPathData, "a").close
         if not os.path.exists(dPathProblem):
             open(dPathProblem, "a").close
-        shutil.copyfile(templatePath,dPathSolution)
+        if not os.path.exists(dPathSolution):
+            shutil.copyfile(templatePath,dPathSolution)
 

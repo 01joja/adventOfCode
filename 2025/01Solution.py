@@ -1,11 +1,13 @@
+import os
 
-import math
+path = os.path.dirname(os.path.abspath(__file__))
+day = os.path.abspath(__file__).split("solution")[0][-2:]
+path = os.path.join(path,day+".data")
 
-data = []
-with open("01.data") as f:
+data: list[str] = []
+with open(path) as f:
     for l in f:
-        data.append(l.replace("\n",""))
-
+        data.append(l.replace("\n", ""))
 
 counter = 50
 zeroHits = 0
